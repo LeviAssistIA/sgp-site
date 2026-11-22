@@ -157,6 +157,13 @@ header{position:sticky;top:0;z-index:30;background:rgba(11,27,63,.92);backdrop-f
 .celInfo div{display:flex;justify-content:space-between;padding:3px 0;color:var(--mut)}.celInfo b{color:var(--tx)}
 .celBt{margin:12px;background:var(--verde);color:#fff;text-align:center;border-radius:12px;padding:11px;font-weight:800;font-size:13px}
 
+/* telas do app */
+.celImg{text-align:center}.celImg img{width:280px;max-width:80vw;height:auto;filter:drop-shadow(0 30px 40px rgba(15,42,74,.25))}
+.galCel{margin-top:56px}.galCel h3{text-align:center;color:var(--pri);font-size:20px;margin:0 0 18px}
+.galTr{display:flex;gap:18px;overflow-x:auto;padding:6px 4px 14px;scroll-snap-type:x mandatory;justify-content:safe center}
+.galTr figure{margin:0;flex:none;width:200px;text-align:center;scroll-snap-align:center}.galTr img{width:200px;height:auto;display:block;filter:drop-shadow(0 16px 22px rgba(15,42,74,.2))}
+.galTr figcaption{font-size:13px;color:var(--mut);margin-top:8px;font-weight:600}
+
 /* para quem */
 .quem{background:var(--pri);color:#fff}
 .quem h2{color:#fff}.quem .lead{color:#b6c4d9}.quem .tagline{background:rgba(255,255,255,.1);color:#bfdbfe}
@@ -360,19 +367,18 @@ footer{background:var(--nav);color:#94a3b8;padding:40px 0;font-size:14px;margin-
         <span class="tagline">SGP Celular</span>
         <h2>O pátio lança, a balança só confere</h2>
         <p class="lead">Com o app no celular, o apontador lê a placa com a câmera, completa os dados e envia. Quando o caminhão sobe na balança, o lançamento já está lá.</p>
-        <ul><li>Leitura da placa pela câmera do celular</li><li>Sugere a placa cadastrada mais parecida</li><li>Guarda os lançamentos sem sinal e envia depois</li><li>Mesmo usuário e senha do programa</li></ul>
+        <ul><li>Leitura da placa pela câmera do celular</li><li>Cadastro de veículo, motorista, transportadora, cliente e material pelo celular, que entra direto no programa</li><li>Se a placa ou outro dado não estiver cadastrado, o app pede para cadastrar na hora</li><li>Escolha da lista no mesmo estilo do programa, só com nomes cadastrados</li><li>Guarda os lançamentos sem sinal e envia depois</li><li>Mesmo usuário e senha do programa</li></ul>
       </div>
-      <div class="cel">
-        <div class="celT">
-          <div class="celTop">SGP Celular<small>Novo lançamento</small></div>
-          <div class="celCam"><div class="moldura"></div><b>ABC1D23</b></div>
-          <div class="celInfo">
-            <div><span>Veículo</span><b>Caminhão truck</b></div>
-            <div><span>Cliente</span><b>Construtora Exemplo</b></div>
-            <div><span>Material</span><b>Brita 1</b></div>
-          </div>
-          <div class="celBt">Enviar para a balança</div>
-        </div>
+      <div class="celImg"><img src="img/tela-2-nova-carga.webp" width="280" height="536" alt="Tela Nova carga do app SGP Celular" loading="lazy"></div>
+    </div>
+    <div class="galCel rev">
+      <h3>Veja as telas do app</h3>
+      <div class="galTr">
+        <figure><img src="img/tela-1-entrada.webp" width="200" height="383" alt="Tela de entrada do app" loading="lazy"><figcaption>Entrada com o usuário do programa</figcaption></figure>
+        <figure><img src="img/tela-2-nova-carga.webp" width="200" height="383" alt="Tela Nova carga" loading="lazy"><figcaption>Nova carga com leitura da placa</figcaption></figure>
+        <figure><img src="img/tela-5-escolha-da-lista.webp" width="200" height="383" alt="Escolha da lista" loading="lazy"><figcaption>Escolha da lista, estilo ERP</figcaption></figure>
+        <figure><img src="img/tela-3-nao-cadastrado.webp" width="200" height="383" alt="Aviso de dado não cadastrado" loading="lazy"><figcaption>Pede para cadastrar o que é novo</figcaption></figure>
+        <figure><img src="img/tela-4-cadastros.webp" width="200" height="383" alt="Cadastros pelo celular" loading="lazy"><figcaption>Cadastros que entram direto no programa</figcaption></figure>
       </div>
     </div>
   </div>
